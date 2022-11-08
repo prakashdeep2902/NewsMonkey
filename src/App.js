@@ -11,8 +11,7 @@ const App = () => {
   const apikey = process.env.REACT_APP_NEWS_API;
   const [progress, setProgress] = useState(0)
 
-  // { console.log(apikey) }
-
+  
   return (
 
     <div>

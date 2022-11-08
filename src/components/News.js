@@ -26,10 +26,7 @@ const News = (props) => {
         setTotalResults(parsedData.totalResults);
         setLoading(false);
         props.setProgress(100);
-
-
-
-    }
+}
 
 
     useEffect(() => {
@@ -50,11 +47,8 @@ const News = (props) => {
         setTotalResults(parsedData.totalResults)
     };
 
-   return (
+    return (
         <>
-
-
-           
             <h1 className='text-center' style={{ margin: '35px 0px' }}> NewsMonkey-Top
                 {capitalizeFirstLetter(props.category)} Headlines</h1>
             {loading && <Spinner />}
@@ -78,7 +72,7 @@ const News = (props) => {
                     </div>
                 </div>
             </InfiniteScroll>
-        
+
         </>
 
 
